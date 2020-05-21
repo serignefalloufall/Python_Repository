@@ -11,11 +11,15 @@ for i in range(1,11):
 plus_grand = my_liste[0]
 #je recuper le premier element de la liste
 #Parcour Liste
+indice = 1
 for elem in my_liste:
     if(elem > plus_grand):
+        indice = indice + 1
         plus_grand = elem 
+       
 
 #Affichage de la liste
 print(my_liste)
 #Affichage de l'element le plus grand
 print("Le plus grand est : ",plus_grand)
+print("La position de la valeur plus grand est: ",indice)
