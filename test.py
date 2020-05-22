@@ -79,4 +79,15 @@ if(annee%4==0 and annee%100!=0 or annee%400==0):
     print("L'annee est une annee bissextile!")
 else:
     print("L'annee n'est pas une annee bissextile!")
+
+
+
+
+t = [0, 1, 2, 3, 4]
+N = 5
+moy = 0
+for i in range(1, N + 1):      # de 1 à N+1 exclu --> de 1 à N inclus
+    moy += t[i - 1]           # le premier indice est 0 et non 1
+moy /= N
+print(moy)
 """
